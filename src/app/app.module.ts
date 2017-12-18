@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { WebBluetoothModule } from '@manekinekko/angular-web-bluetooth';
 
 import { AppComponent } from './app.component';
-import { BatteryLevelComponent } from './battery-level/battery-level.component';
+import { HeartRateComponent } from './heart-rate/heart-rate.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BatteryLevelComponent
+    HeartRateComponent
   ],
   entryComponents: [
-    BatteryLevelComponent
+    HeartRateComponent
   ],
   imports: [
     BrowserModule,
