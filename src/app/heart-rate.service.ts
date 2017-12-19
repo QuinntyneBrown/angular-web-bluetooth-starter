@@ -39,7 +39,7 @@ export class HeartRateService {
     try {
         return this.ble
           .discover$({
-            acceptAllDevices: true,
+            filters: [{ services: [HeartRateService.GATT_PRIMARY_SERVICE] }],
             optionalServices: [HeartRateService.GATT_PRIMARY_SERVICE],
           } as RequestDeviceOptions)
           .mergeMap( (gatt: BluetoothRemoteGATTServer)  => {
@@ -50,9 +50,6 @@ export class HeartRateService {
           })
           .mergeMap( (characteristic: BluetoothRemoteGATTCharacteristic) =>  {
             return this.ble.readValue$(characteristic);
-          })
-          .map( (value: DataView) => {
-            return value.getUint8(0);
           });
     } catch (e) {
       console.error('Oops! can not read value from %s');

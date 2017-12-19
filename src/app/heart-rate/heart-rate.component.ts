@@ -21,7 +21,7 @@ type HeartRateMeasurement = {
   styles: [`
     a {
       position: relative;
-      color: rgba(255,255,255,1);
+      color: rgba(1,1,1,1);
       text-decoration: none;
       font-family: monospace;
       font-weight: 700;
@@ -46,6 +46,7 @@ type HeartRateMeasurement = {
     }
 
     a.maximum {
+      color: rgba(255,255,255,1);
       background-color: #CD2834;
       box-shadow: 0px 9px 0px #B52231, 0px 9px 25px rgba(0,0,0,.7);
       text-shadow: #B52231 1px, 1px, 2px;
@@ -55,6 +56,7 @@ type HeartRateMeasurement = {
     }
     
     a.hard {
+      color: rgba(255,255,255,1);
       background-color: #ff8c00;
       box-shadow: 0px 9px 0px #e77f00, 0px 9px 25px rgba(0,0,0,.7);
       text-shadow: #e77f00 1px, 1px, 2px;
@@ -64,6 +66,7 @@ type HeartRateMeasurement = {
     }
     
     a.moderate {
+      color: rgba(255,255,255,1);
       background-color: #3cb371;
       box-shadow: 0px 9px 0px #36a266, 0px 9px 25px rgba(0,0,0,.7);
       text-shadow: #36a266 1px, 1px, 2px;
@@ -73,6 +76,7 @@ type HeartRateMeasurement = {
     }
     
     a.light {
+      color: rgba(255,255,255,1);
       background-color: #1e90ff;
       box-shadow: 0px 9px 0px #1b82e7, 0px 9px 25px rgba(0,0,0,.7);
       text-shadow: #1b82e7 1px, 1px, 2px;
@@ -82,6 +86,7 @@ type HeartRateMeasurement = {
     }
     
     a.resting {
+      color: rgba(255,255,255,1);
       background-color: #808080;
       box-shadow: 0px 9px 0px #747474, 0px 9px 25px rgba(0,0,0,.7);
       text-shadow: #747474 1px, 1px, 2px;
